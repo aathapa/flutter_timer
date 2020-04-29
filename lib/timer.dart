@@ -6,7 +6,7 @@ import './models/timer_model.dart';
 
 class CountTimer {
   double _radius = 1;
-  bool _isActive = false;
+  bool _isActive = true;
   Timer timer;
   Duration _time;
   Duration _fullTime;
@@ -45,7 +45,6 @@ class CountTimer {
     _time = Duration(minutes: work, seconds: 0);
     _radius = 1;
     _fullTime = _time;
-    _isActive = true;
   }
 
   Future readSettings() async {
